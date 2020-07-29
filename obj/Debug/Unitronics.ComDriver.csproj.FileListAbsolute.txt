@@ -1,0 +1,31 @@
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\bin\Debug\Unitronics.ComDriver.dll.config
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\bin\Debug\Unitronics.ComDriver.dll
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\bin\Debug\Unitronics.ComDriver.pdb
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\obj\Debug\Unitronics.ComDriver.csprojResolveAssemblyReference.cache
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\obj\Debug\Unitronics.ComDriver.Resources.ComDriverResource.resources
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\obj\Debug\Unitronics.ComDriver.UserControl1.resources
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\obj\Debug\Unitronics.ComDriver.csproj.GenerateResource.Cache
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\obj\Debug\Unitronics.ComDriver.dll
+C:\Users\kaida\Downloads\NET Driver 2015 - Q4\Source Code\obj\Debug\Unitronics.ComDriver.pdb
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\bin\Debug\Unitronics.ComDriver.pdb
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\obj\Debug\Unitronics.ComDriver.csprojResolveAssemblyReference.cache
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\obj\Debug\Unitronics.ComDriver.Resources.ComDriverResource.resources
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\obj\Debug\Unitronics.ComDriver.UserControl1.resources
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\obj\Debug\Unitronics.ComDriver.csproj.GenerateResource.Cache
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\obj\Debug\Unitronics.ComDriver.pdb
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\bin\Debug\Unitronics.ComDriver.exe.config
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\bin\Debug\Unitronics.ComDriver.exe
+C:\Users\kaida\Desktop\PLC_C#_Projekts\NET Driver 2015 - Q4 - Kopie\Source Code\obj\Debug\Unitronics.ComDriver.exe
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.csprojResolveAssemblyReference.cache
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.Resources.ComDriverResource.resources
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.UserControl1.resources
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.csproj.GenerateResource.Cache
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.exe
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.pdb
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\bin\Debug\Unitronics.ComDriver.exe.config
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\bin\Debug\Unitronics.ComDriver.exe
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\bin\Debug\Unitronics.ComDriver.pdb
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\bin\Debug\Unitronics.ComDriver.exe.manifest
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\bin\Debug\Unitronics.ComDriver.application
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.exe.manifest
+C:\Users\kaida\Desktop\PLC_C#_Projekts\Kompressor\Source Code\obj\Debug\Unitronics.ComDriver.application

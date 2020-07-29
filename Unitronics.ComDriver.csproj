@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE0BB750-A294-4BD1-A8D3-A1844F531596}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unitronics.ComDriver</RootNamespace>
+    <AssemblyName>Unitronics.ComDriver</AssemblyName>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\kaida\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '32 Bit|AnyCPU' ">
+    <OutputPath>bin\32 Bit\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '32 Bit|x86' ">
+    <OutputPath>bin\x86\32 Bit\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '32 Bit|x64'">
+    <OutputPath>bin\x64\32 Bit\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C21D5A60F9243DBF63C0094A1A826282A95F2D41</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Unitronics.ComDriver_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Channel.cs" />
+    <Compile Include="ComDriverLogEntry.cs" />
+    <Compile Include="ComDriverLogger.cs" />
+    <Compile Include="Command\CommadBuilder.cs" />
+    <Compile Include="Command\PComA.cs" />
+    <Compile Include="Command\PComB.cs" />
+    <Compile Include="Ethernet.cs" />
+    <Compile Include="EthernetListener.cs" />
+    <Compile Include="Exceptions\ComDriveExceptions.cs" />
+    <Compile Include="ExecutersContainer.cs" />
+    <Compile Include="Executers\AsciiExecuter.cs" />
+    <Compile Include="Executers\BinaryExecuter.cs" />
+    <Compile Include="Executers\DataTablesExecuter.cs" />
+    <Compile Include="Executers\Executer.cs" />
+    <Compile Include="Executers\FullBinaryMixExecuter.cs" />
+    <Compile Include="Executers\PartialBinaryMixExecuter.cs" />
+    <Compile Include="Executers\SplitAndJoin.cs" />
+    <Compile Include="ListenerClient.cs" />
+    <Compile Include="ListenerClientsInfo.cs" />
+    <Compile Include="ListenerServer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="main2.cs" />
+    <Compile Include="MessageRecord.cs" />
+    <Compile Include="Messages\ASCIIMessage\AbstractASCIIMessage.cs" />
+    <Compile Include="Messages\ASCIIMessage\ASCIIMessageFactory.cs" />
+    <Compile Include="Messages\ASCIIMessage\ReadBitsMessage.cs" />
+    <Compile Include="Messages\ASCIIMessage\ReadIntegersMessage.cs" />
+    <Compile Include="Messages\ASCIIMessage\ReadUnitIdMessage.cs" />
+    <Compile Include="Messages\ASCIIMessage\SetBitsMessage.cs" />
+    <Compile Include="Messages\ASCIIMessage\SetUnitIdMessage.cs" />
+    <Compile Include="Messages\ASCIIMessage\WriteIntegersMessage.cs" />
+    <Compile Include="Messages\BinMessage\BinaryMessage.cs" />
+    <Compile Include="Messages\CommandCode.cs" />
+    <Compile Include="Messages\DataRequest\BinaryRequest.cs" />
+    <Compile Include="Messages\DataRequest\ReadDataTables.cs" />
+    <Compile Include="Messages\BinMessage\Details.cs" />
+    <Compile Include="Messages\BinMessage\Footer.cs" />
+    <Compile Include="Messages\BinMessage\Header.cs" />
+    <Compile Include="Messages\DataRequest\ReadOperands.cs" />
+    <Compile Include="Messages\DataRequest\ReadWriteRequest.cs" />
+    <Compile Include="Messages\DataRequest\WriteDataTables.cs" />
+    <Compile Include="Messages\DataRequest\WriteOperands.cs" />
+    <Compile Include="Messages\IMessage.cs" />
+    <Compile Include="Messages\OperandType.cs" />
+    <Compile Include="PlcComConfig.cs" />
+    <Compile Include="plc_haussterung.cs" />
+    <Compile Include="plc_Kompressor.cs" />
+    <Compile Include="Resources\ComDriverResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComDriverResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SD.cs" />
+    <Compile Include="Exceptions\SdExceptions.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="PLC.cs" />
+    <Compile Include="PlcVersion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PLCFactory.cs" />
+    <Compile Include="Serial.cs" />
+    <Compile Include="WrappedSocket.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Xml\PLCModels.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Unitronics.ComDriver_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ComDriverResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ComDriverResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

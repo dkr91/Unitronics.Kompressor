@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Details:
+
+Operands Executers:
+    Ascii = 1                    (ASCII OS)
+    PartialBinaryMixExecuter = 2 (Old   OS)
+    FullBinaryMixExecuter = 3    (New   OS)
+    
+Executers Types:
+    Operands = 1,
+    DataTables = 2,
+    BasicBinary = 4,
+    Binary = 8
+  
+-->
+<PLCs Version="1.0.0.32">
+
+  <!-- Boot / Preboot -->
+  <PLC Reply="PRBT" Model="FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="13PRBT" Model="V130 FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="35PRBT" Model="V350 FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="43PRBT" Model="V430 FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="10PRBT" Model="V1040/V1210 FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="PC15  " Model="EXF-RC15 FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="SM35PB" Model="SM35-J FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="SM43PB" Model="SM43-J FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="SM70PB" Model="SM70-J FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="SM7OPB" Model="SM70-OEM FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="70PR" Model="V700-T20BJ FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="ADF1" Model="ADP-PB1 FACTORY BOOT">
+    <PreBoot Executers="4" OperandsExecuter="1" BufferSize="496" />
+  </PLC>
+  <PLC Reply="BOOT" Model="BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="CLBT" Model="CLR BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="13BOOT" Model="V130 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35BOOT" Model="V350 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="SM35BT" Model="SM35-J BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="SM43BT" Model="SM43-J BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="SM70BT" Model="SM70-J BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="SM7OBT" Model="SM70-OEM BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="SMBT" Model="SM35 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="10BOOT" Model="V1040 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="12BOOT" Model="V1210 BOOT">
+      <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="43BOOT" Model="V430 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="70BOOT" Model="V700-T20BJ BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="ADB1" Model="ADP-PB1 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="BM90" Model="BOOT">
+    <Boot Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="BNX1" Model="BOOT">
+    <Boot Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="BNR1" Model="BOOT">
+    <Boot Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="BRC1" Model="EX-RC1 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="BC15  " Model="EXF-RC15 BOOT">
+    <Boot Executers="5" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <!-- End of Boot / Preboot -->
+  
+  <!-- M90/91 and Jazz PLCs -->
+  <PLC Reply="B1  " Model="M90-19-B1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="B1A " Model="M90-19-B1A">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="R1  " Model="M90-R1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="R1C " Model="M90-R1-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="R2C " Model="M90-R2-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="T   " Model="M90-T">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="T1  " Model="M90-T1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="T1C " Model="M90-T1-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="TA2C" Model="M90-TA2-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="TA3C" Model="M90-TA3-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1TC2" Model="M91-19-TC2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1UN2" Model="M91-19-UN2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1R1 " Model="M91-19-R1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1R2 " Model="M91-19-R2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1R2C" Model="M91-19-R2C">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1T1 " Model="M91-19-T1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1UA2" Model="M91-19-UA2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1T2C" Model="M91-19-T2C">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7B1 " Model="M90-2-B1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7B1A" Model="M90-2-B1A">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7R1 " Model="M90-2-R1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7R1C" Model="M90-2-R1-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7R2C" Model="M90-2-R2-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7T  " Model="M90-2-T">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7T1 " Model="M90-2-T1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7T1C" Model="M90-2-T1-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7TA2" Model="M90-2-TA2-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="7TA3" Model="M90-2-TA3-CAN">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8TC2" Model="M91-2-TC2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8UN2" Model="M91-2-UN2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8R1 " Model="M91-2-R1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8R2 " Model="M91-2-R2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8R2C" Model="M91-2-R2C">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8T1 " Model="M91-2-T1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8UA2" Model="M91-2-UA2">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8T38" Model="M91-2-T38">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8T2C" Model="M91-2-T2C">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8R6C" Model="M91-2-R6C">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8R34" Model="M91-2-R34">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8A19" Model="M91-2-RA19">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8A22" Model="M91-2-RA22">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="1T38" Model="M91-19-T38">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JR14" Model="BOSCH">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JR17" Model="JZ10-11-R17">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JR10" Model="JZ10-11-R10">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JR16" Model="JZ10-11-R16">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JT10" Model="JZ10-11-T10">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JT17" Model="JZ10-11-T17">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JEW1" Model="JZB2-11-EW1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JE10" Model="JZB1-11-SE10">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JR31" Model="JZ10-11-R31">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JT40" Model="JZ10-11-T40">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JP15" Model="JZ10-11-PT15">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JE13" Model="JZ10-11-UE13">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JA24" Model="JZ10-11-UA24">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="JN20" Model="JZ10-11-UN20">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="NR10" Model="JZ20-R10" SuppressEthernetHeader="True">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="NR16" Model="JZ20-R16" SuppressEthernetHeader="True">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="NR31" Model="JZ20-R31" SuppressEthernetHeader="True">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="NT10" Model="JZ20-T10" SuppressEthernetHeader="True">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="NT18" Model="JZ20-T18" SuppressEthernetHeader="True">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="NT20" Model="JZ20-T20" SuppressEthernetHeader="True">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="NT40" Model="JZ20-T40" SuppressEthernetHeader="True">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <PLC Reply="8RZ " Model="M91-2-R1-AZ1">
+    <OS FromVersion="*" ToVersion="*" Executers="1" OperandsExecuter="1" BufferSize="496" OpMemoryMapID="4" />
+  </PLC>
+  <!-- End of M90/91 and Jazz PLCs -->
+  
+  <!-- V2xx PLCs -->
+  <PLC Reply="2320" Model="V230-13-B20">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="2620" Model="V260-16-B20">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="2820" Model="V280-18-B20">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="2920" Model="V290-19-B20">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VUN2" Model="V120-12-UN2">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VR1 " Model="V120-12-R1">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VR2C" Model="V120-12-R2C">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VUA2" Model="V120-12-UA2">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VT1 " Model="V120-12-T1">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VT40" Model="V120-12-T40">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VT2C" Model="V120-12-T2C">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="VT38" Model="V120-12-T38">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WUN2" Model="V120-22-UN2">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WR1 " Model="V120-22-R1">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WR2C" Model="V120-22-R2C">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WUA2" Model="V120-22-UA2">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WT1 " Model="V120-22-T1">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WT40" Model="V120-22-T40">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WT2C" Model="V120-22-T2C">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WT38" Model="V120-22-T38">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WR6C" Model="V120-22-R6C">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WR34" Model="V120-22-R34">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WA19" Model="V120-22-RA19">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="WA22" Model="V120-22-RA22">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="ERC1" Model="EX-RC1">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <PLC Reply="5320" Model="V530-53-B20B">
+    <OS FromVersion="*" ToVersion="5.02" Executers="15" OperandsExecuter="2" BufferSize="496" OpMemoryMapID="1" />
+    <OS FromVersion="5.03" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="496" OpMemoryMapID="1" />
+  </PLC>
+  <!-- End of V2xx PLCs -->
+  
+  <!-- V570/560 PLCs -->
+  <PLC Reply="49C3" Model="V570-57-C30 / V290-19-C30">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="57C3" Model="V570-57-C30 / V290-19-C30">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="49T3" Model="V570-57-T34 / V290-19-T34">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="57T3" Model="V570-57-T34 / V290-19-T34">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="49T2" Model="V570-57-T20 / V290-19-T20">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="57T2" Model="V570-57-T20 / V290-19-T20">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="49T4" Model="V570-57-T40 / V290-19-T40">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="57T4" Model="V570-57-T40 / V290-19-T40">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="56C3" Model="V560-56-C30">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="56T4" Model="V560-56-T40">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="56T3" Model="V560-56-T34">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="56T2" Model="V560-56-T25B">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of V570/560 PLCs -->
+  
+  <!-- V130 PLCs -->
+  <PLC Reply="13TR22" Model="V130-33-TRA22">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+
+  <PLC Reply="13XXXX" Model="V130-33-XXXX">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  
+  <PLC Reply="13R2  " Model="V130-33-R2">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13R34 " Model="V130-33-R34">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13T2  " Model="V130-33-T2">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13T38 " Model="V130-33-T38">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13RA22" Model="V130-33-RA22">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13TA24" Model="V130-33-TA24">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13B1  " Model="V130-33-B1">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13T40 " Model="V130-33-T40">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13R6  " Model="V130-33-R6">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13TR34" Model="V130-33-TR34">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13TR22" Model="V130-33-TRA22">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <PLC Reply="13TR20" Model="V130-33-TR20">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>  
+  <PLC Reply="13TR6 " Model="V130-33-TR6">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>  
+  <PLC Reply="13TU24" Model="V130-33-TU24">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+
+  <PLC Reply="13(.{1,4})" Model="V130-33-*" ExpressionType="Regex">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  
+  <!-- End of V130 PLCs -->
+  
+  <!-- V350 PLCs -->
+  <PLC Reply="35R2  " Model="V350-35-R2">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35R34 " Model="V350-35-R34">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35T2  " Model="V350-35-T2">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35T38 " Model="V350-35-T38">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35RA22" Model="V350-35-RA22">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35TA24" Model="V350-35-TA24">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35B1  " Model="V350-35-B1">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35T40 " Model="V350-35-T40">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35R6  " Model="V350-35-R6">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35TR34" Model="V350-35-TR34">
+        <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+        <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35TR22" Model="V350-35-TRA22">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="35TR20" Model="V350-35-TR20">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>  
+  <PLC Reply="35TR6 " Model="V350-35-TR6">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>  
+  <PLC Reply="35TU24" Model="V350-35-TU24">
+      <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+      <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC> 
+  <PLC Reply="35XXXX" Model="V350-35-XXXX">
+        <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+        <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+
+  <PLC Reply="35(.{1,4})" Model="V350-35-*" ExpressionType="Regex">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="3" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of V350 PLCs -->
+
+  <!-- V430 PLCs -->
+  <PLC Reply="43(.{1,4})" Model="V430-J-*" ExpressionType="Regex">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of V430 PLCs -->
+
+  <!-- Samba PLCs -->
+  <PLC Reply="S3T20 " Model="SM35-J-T20">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="S3TA2 " Model="SM35-J-R20">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="S3R20 " Model="SM35-J-R20">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="S3(.{1,4})" Model="SM35-J-*" ExpressionType="Regex">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of Samba PLCs -->
+
+  <!-- Samba 4.3 PLCs -->
+  <PLC Reply="S4T20 " Model="SM43-J-T20">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="S4TA2 " Model="SM43-J-R20">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="S4R20 " Model="SM43-J-R20">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <PLC Reply="S4(.{1,4})" Model="SM43-J-*" ExpressionType="Regex">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of Samba 4.3 PLCs -->
+
+  <!-- Samba 7.0 PLCs -->
+  <PLC Reply="S7(.{1,4})" Model="SM70-J-*" ExpressionType="Regex">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of Samba 7.0 PLCs -->
+
+  <!-- Samba 7.0 OEM PLCs -->
+  <PLC Reply="SO(.{1,4})" Model="SM70-OEM-*" ExpressionType="Regex">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of Samba 7.0 OEM PLCs -->
+
+  <!-- V700 PLCs -->
+  <PLC Reply="70T2" Model="V700-T20BJ">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of V700 PLCs -->
+  
+  <!-- EXF-RC15 PLCs -->
+  <PLC Reply="EC15  " Model="EXF-RC15">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <!-- End of EXF-RC15 PLCs -->
+
+  <!-- APD PLCs -->
+  <PLC Reply="ADP1  " Model="ADP-PB1">
+    <OS FromVersion="*" ToVersion="2.2" Executers="15" OperandsExecuter="2" BufferSize="1000" OpMemoryMapID="2" />
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="2" />
+  </PLC>
+  <!-- APD PLCs -->
+
+  <!-- V1040 PLCs -->
+  <PLC Reply="10T2" Model="V1040">
+      	<OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  
+  <!-- End of V1040 PLCs -->
+
+  <!-- V1210 PLCs -->
+  <PLC Reply="12T2" Model="V1210">
+      	<OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- End of V1210 PLCs -->
+
+  <!-- ADP -->
+  <PLC Reply="ADP1" Model="ADP-PB1">
+    <OS FromVersion="3.0" ToVersion="*" Executers="15" OperandsExecuter="3" BufferSize="1000" OpMemoryMapID="3" />
+  </PLC>
+  <!-- ADP -->
+      
+  <!-- Memory Map -->  
+  <OperandsMemoryMap MapID="1">
+    <Operand Type="MB" Count="4096" />
+    <Operand Type="SB" Count="512" />
+    <Operand Type="MI" Count="2048" />
+    <Operand Type="SI" Count="512" />
+    <Operand Type="ML" Count="256" />
+    <Operand Type="SL" Count="56" />
+    <Operand Type="MF" Count="24" />
+    <Operand Type="Input" Count="544" />
+    <Operand Type="Output" Count="544" />
+    <Operand Type="Timer" Count="192" />
+    <Operand Type="Counter" Count="24" />
+    <Operand Type="DW" Count="64" />
+    <Operand Type="SDW" Count="64" />
+  </OperandsMemoryMap>
+  <OperandsMemoryMap MapID="2">
+    <Operand Type="MB" Count="4096" />
+    <Operand Type="SB" Count="512" />
+    <Operand Type="MI" Count="2048" />
+    <Operand Type="SI" Count="512" />
+    <Operand Type="ML" Count="256" />
+    <Operand Type="SL" Count="56" />
+    <Operand Type="MF" Count="24" />
+    <Operand Type="Input" Count="544" />
+    <Operand Type="Output" Count="544" />
+    <Operand Type="Timer" Count="192" />
+    <Operand Type="Counter" Count="24" />
+    <Operand Type="DW" Count="64" />
+    <Operand Type="SDW" Count="64" />
+    <Operand Type="XB" Count="1024" />
+    <Operand Type="XI" Count="512" />
+    <Operand Type="XL" Count="256" />
+    <Operand Type="XDW" Count="64" />
+  </OperandsMemoryMap>
+  <OperandsMemoryMap MapID="3">
+    <Operand Type="MB" Count="8192" />
+    <Operand Type="SB" Count="512" />
+    <Operand Type="MI" Count="4096" />
+    <Operand Type="SI" Count="512" />
+    <Operand Type="ML" Count="512" />
+    <Operand Type="SL" Count="56" />
+    <Operand Type="MF" Count="64" />
+    <Operand Type="Input" Count="544" />
+    <Operand Type="Output" Count="544" />
+    <Operand Type="Timer" Count="384" />
+    <Operand Type="Counter" Count="32" />
+    <Operand Type="DW" Count="255" />
+    <Operand Type="SDW" Count="64" />
+    <Operand Type="XB" Count="1024" />
+    <Operand Type="XI" Count="512" />
+    <Operand Type="XL" Count="256" />
+    <Operand Type="XDW" Count="64" />
+  </OperandsMemoryMap>
+  <OperandsMemoryMap MapID="4">
+    <Operand Type="MB" Count="256" />
+    <Operand Type="SB" Count="256" />
+    <Operand Type="MI" Count="256" />
+    <Operand Type="SI" Count="256" />
+    <Operand Type="Input" Count="160" />
+    <Operand Type="Output" Count="160" />
+    <Operand Type="Timer" Count="64" />
+  </OperandsMemoryMap>
+  <!-- End of Memory Map -->
+</PLCs>

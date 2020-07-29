@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unitronics.ComDriver", "Unitronics.ComDriver.csproj", "{BE0BB750-A294-4BD1-A8D3-A1844F531596}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		32 Bit|Any CPU = 32 Bit|Any CPU
+		32 Bit|x64 = 32 Bit|x64
+		32 Bit|x86 = 32 Bit|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.32 Bit|Any CPU.ActiveCfg = 32 Bit|Any CPU
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.32 Bit|Any CPU.Build.0 = 32 Bit|Any CPU
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.32 Bit|x64.ActiveCfg = 32 Bit|x64
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.32 Bit|x64.Build.0 = 32 Bit|x64
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.32 Bit|x86.ActiveCfg = 32 Bit|x86
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.32 Bit|x86.Build.0 = 32 Bit|x86
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Debug|x64.ActiveCfg = Debug|x64
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Debug|x64.Build.0 = Debug|x64
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Debug|x86.ActiveCfg = Debug|x86
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Debug|x86.Build.0 = Debug|x86
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Release|x64.ActiveCfg = Release|x64
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Release|x64.Build.0 = Release|x64
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Release|x86.ActiveCfg = Release|x86
+		{BE0BB750-A294-4BD1-A8D3-A1844F531596}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
